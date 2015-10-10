@@ -222,6 +222,59 @@ $o
 ```
 
 
+### Using Google image extension
+
+```php
+$xmlFile = 'sitemap-with-image.xml';
+$o = new XmlSitemapBuilder();
+$o
+//    ->registerPlugin(new GoogleVideoXmlSitemapBuilderPlugin()) // uncomment this line if you need image and videos
+    ->registerPlugin(new GoogleImageXmlSitemapBuilderPlugin())
+    ->createSitemapFile(
+        Sitemap::create()
+            // https://support.google.com/webmasters/answer/178636?hl=en
+            ->addUrl(Url::create()
+                    ->setLoc("http://example.com/sample.html")
+                    ->addImage(Image::create()->setLoc("http://example.com/image.jpg"))
+                    ->addImage(Image::create()->setLoc("http://example.com/photo.jpg"))
+                    // the image below uses all image properties
+                    ->addImage(Image::create()
+                            ->setLoc("http://example.com/puppy.jpg")
+                            ->setCaption("Dalmatian puppy playing fetch")
+                            ->setGeoLocation("Limerick, Ireland")
+                            ->setTitle("Dalmatian puppy playing fetch")
+                            ->setLicence("https://opensource.org/licenses/MIT")
+                    )
+            )
+            ->addUrl(Url::create()->setLoc('http://www.example.com/catalog?item=12&desc=vacation_hawaii'))
+            ->addUrl(Url::create()->setLoc('http://www.example.com/catalog?entities=>&é<"\''))
+        , $xmlFile);
+```                
+
+
+
+### Using Google mobile extension
+
+```php
+$xmlFile = 'sitemap-with-mobile.xml';
+$o = new XmlSitemapBuilder();
+$o
+//    ->registerPlugin(new GoogleVideoXmlSitemapBuilderPlugin()) // uncomment this line if you video extension
+//    ->registerPlugin(new GoogleImageXmlSitemapBuilderPlugin()) // uncomment this line if you image extension
+    ->registerPlugin(new GoogleMobileXmlSitemapBuilderPlugin())
+    ->createSitemapFile(
+        Sitemap::create()
+            // https://support.google.com/webmasters/answer/6082207?hl=en
+            ->addUrl(Url::create()
+                    ->setLoc("http://mobile.example.com/article100.html")
+                    ->setMobile(Mobile::create())
+            )
+            ->addUrl(Url::create()->setLoc('http://www.example.com/catalog?item=12&desc=vacation_hawaii'))
+            ->addUrl(Url::create()->setLoc('http://www.example.com/catalog?entities=>&é<"\''))
+        , $xmlFile);
+```                
+
+
 
 
 
@@ -259,6 +312,8 @@ Note: this example was created to be displayed through a browser.<br>
 The "a" function comes from the 
 [bigbang.php](https://github.com/lingtalfi/universe/blob/master/planets/TheScientist/bigbang/bigbang.php)
 script.
+
+
 
 
 

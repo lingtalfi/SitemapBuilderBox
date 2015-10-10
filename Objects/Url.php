@@ -18,6 +18,16 @@ class Url
      */
     public $video;
 
+    /**
+     * @var Image[]
+     */
+    public $images;
+
+    /**
+     * @var Mobile
+     */
+    public $mobile;
+
 
     public function __construct()
     {
@@ -57,6 +67,18 @@ class Url
     public function setVideo(Video $video)
     {
         $this->video = $video;
+        return $this;
+    }
+
+    public function setMobile(Mobile $mobile)
+    {
+        $this->mobile = $mobile;
+        return $this;
+    }
+
+    public function addImage(Image $image)
+    {
+        $this->images[] = $image;
         return $this;
     }
 
