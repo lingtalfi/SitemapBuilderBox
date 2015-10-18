@@ -62,7 +62,7 @@ SitemapBuilder::create()->createSitemapFile($sitemap, $xmlFile, 'xml');
 ```
 
 Note: to learn more about the bigbang one liner, please visit the 
-[portable autoloader page](https://github.com/lingtalfi/universe/blob/master/planets/TheScientist/convention.portableAutoloader.eng.md).
+[portable autoloader page](https://github.com/lingtalfi/TheScientist/blob/master/convention.portableAutoloader.eng.md).
 
 
 #### The basic xml sitemap with gz compression
@@ -310,7 +310,7 @@ $o->submit($sitemapUrl, function ($code, $msg) {
 
 Note: this example was created to be displayed through a browser.<br>
 The "a" function comes from the 
-[bigbang.php](https://github.com/lingtalfi/universe/blob/master/planets/TheScientist/bigbang/bigbang.php)
+[bigbang.php](https://github.com/lingtalfi/TheScientist/blob/master/bigbang/bigbang.php)
 script.
 
 
@@ -327,6 +327,11 @@ Sources
 
 
 
+
+Recommendation
+-------------------
+
+You also might be interested by the [SitemapSlicer class](https://github.com/lingtalfi/SitemapSlicer)
 
 
 
