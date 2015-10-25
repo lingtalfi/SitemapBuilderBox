@@ -336,3 +336,9 @@ You also might be interested by the [SitemapSlicer class](https://github.com/lin
 
 
 
+Dependencies
+------------------
+
+- [lingtalfi/Bat 1.04](https://github.com/lingtalfi/Bat)
+
+
