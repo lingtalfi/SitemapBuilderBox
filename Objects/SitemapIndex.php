@@ -1,6 +1,6 @@
 <?php
 
-namespace SitemapBuilderBox\Objects;
+namespace Ling\SitemapBuilderBox\Objects;
 
 /*
  * LingTalfi 2015-10-08

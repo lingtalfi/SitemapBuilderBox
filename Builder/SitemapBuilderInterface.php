@@ -1,6 +1,6 @@
 <?php
 
-namespace SitemapBuilderBox\Builder;
+namespace Ling\SitemapBuilderBox\Builder;
 
 /*
  * LingTalfi 2015-10-08
@@ -8,7 +8,7 @@ namespace SitemapBuilderBox\Builder;
  */
 
 
-use SitemapBuilderBox\Objects\Sitemap;
+use Ling\SitemapBuilderBox\Objects\Sitemap;
 
 interface SitemapBuilderInterface
 {

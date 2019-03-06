@@ -1,6 +1,6 @@
 <?php
 
-namespace SitemapBuilderBox;
+namespace Ling\SitemapBuilderBox;
 
 /*
  * LingTalfi 2015-10-08
@@ -8,10 +8,10 @@ namespace SitemapBuilderBox;
  * 
  * 
  */
-use Bat\FileSystemTool;
-use SitemapBuilderBox\Objects\Sitemap;
-use SitemapBuilderBox\Builder\TextSitemapBuilder;
-use SitemapBuilderBox\Builder\XmlSitemapBuilder;
+use Ling\Bat\FileSystemTool;
+use Ling\SitemapBuilderBox\Objects\Sitemap;
+use Ling\SitemapBuilderBox\Builder\TextSitemapBuilder;
+use Ling\SitemapBuilderBox\Builder\XmlSitemapBuilder;
 
 class SitemapBuilder
 {

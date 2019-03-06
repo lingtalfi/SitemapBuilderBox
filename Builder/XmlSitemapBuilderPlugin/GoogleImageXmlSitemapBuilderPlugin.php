@@ -1,15 +1,15 @@
 <?php
 
-namespace SitemapBuilderBox\Builder\XmlSitemapBuilderPlugin;
+namespace Ling\SitemapBuilderBox\Builder\XmlSitemapBuilderPlugin;
 
 /*
  * LingTalfi 2015-10-10
  * https://support.google.com/webmasters/answer/178636?hl=en
  */
-use SitemapBuilderBox\Objects\Sitemap;
-use SitemapBuilderBox\Objects\Url;
-use SitemapBuilderBox\Builder\XmlSitemapBuilder;
-use SitemapBuilderBox\Tool\SitemapBuilderTool;
+use Ling\SitemapBuilderBox\Objects\Sitemap;
+use Ling\SitemapBuilderBox\Objects\Url;
+use Ling\SitemapBuilderBox\Builder\XmlSitemapBuilder;
+use Ling\SitemapBuilderBox\Tool\SitemapBuilderTool;
 
 class GoogleImageXmlSitemapBuilderPlugin implements XmlSitemapBuilderPluginInterface
 {

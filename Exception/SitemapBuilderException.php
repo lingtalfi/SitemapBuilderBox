@@ -1,6 +1,6 @@
 <?php
 
-namespace SitemapBuilderBox\Exception;
+namespace Ling\SitemapBuilderBox\Exception;
 
 /*
  * LingTalfi 2015-10-07

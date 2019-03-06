@@ -16,7 +16,7 @@ Install
 ==========
 Using the [uni](https://github.com/lingtalfi/universe-naive-importer) command.
 ```bash
-uni import SitemapBuilderBox
+uni import Ling/SitemapBuilderBox
 ```
 
 
@@ -55,9 +55,9 @@ The following code creates a sitemap with 3 urls, then uses the SitemapBuilder t
 
 ```php
 
-use SitemapBuilderBox\Objects\Sitemap;
-use SitemapBuilderBox\Objects\Url;
-use SitemapBuilderBox\SitemapBuilder;
+use Ling\SitemapBuilderBox\Objects\Sitemap;
+use Ling\SitemapBuilderBox\Objects\Url;
+use Ling\SitemapBuilderBox\SitemapBuilder;
 
 require_once "bigbang.php";
 

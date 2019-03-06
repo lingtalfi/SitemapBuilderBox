@@ -1,13 +1,13 @@
 <?php
 
-namespace SitemapBuilderBox\Builder;
+namespace Ling\SitemapBuilderBox\Builder;
 
 /*
  * LingTalfi 2015-10-07
  * 
  */
-use Bat\FileSystemTool;
-use SitemapBuilderBox\Objects\Sitemap;
+use Ling\Bat\FileSystemTool;
+use Ling\SitemapBuilderBox\Objects\Sitemap;
 
 class TextSitemapBuilder implements SitemapBuilderInterface
 {

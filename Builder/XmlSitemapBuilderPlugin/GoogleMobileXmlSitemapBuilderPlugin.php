@@ -1,13 +1,13 @@
 <?php
 
-namespace SitemapBuilderBox\Builder\XmlSitemapBuilderPlugin;
+namespace Ling\SitemapBuilderBox\Builder\XmlSitemapBuilderPlugin;
 
 /*
  * LingTalfi 2015-10-10
  */
-use SitemapBuilderBox\Builder\XmlSitemapBuilder;
-use SitemapBuilderBox\Objects\Sitemap;
-use SitemapBuilderBox\Objects\Url;
+use Ling\SitemapBuilderBox\Builder\XmlSitemapBuilder;
+use Ling\SitemapBuilderBox\Objects\Sitemap;
+use Ling\SitemapBuilderBox\Objects\Url;
 
 class GoogleMobileXmlSitemapBuilderPlugin implements XmlSitemapBuilderPluginInterface
 {

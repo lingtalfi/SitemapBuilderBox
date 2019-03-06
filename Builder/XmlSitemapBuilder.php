@@ -1,18 +1,18 @@
 <?php
 
-namespace SitemapBuilderBox\Builder;
+namespace Ling\SitemapBuilderBox\Builder;
 
 /*
  * LingTalfi 2015-10-07
  * 
  */
-use Bat\FileSystemTool;
-use SitemapBuilderBox\Builder\XmlSitemapBuilderPlugin\XmlSitemapBuilderPluginInterface;
-use SitemapBuilderBox\Exception\SitemapBuilderException;
-use SitemapBuilderBox\Objects\Sitemap;
-use SitemapBuilderBox\Objects\SitemapIndex;
-use SitemapBuilderBox\Objects\Url;
-use SitemapBuilderBox\Tool\SitemapBuilderTool;
+use Ling\Bat\FileSystemTool;
+use Ling\SitemapBuilderBox\Builder\XmlSitemapBuilderPlugin\XmlSitemapBuilderPluginInterface;
+use Ling\SitemapBuilderBox\Exception\SitemapBuilderException;
+use Ling\SitemapBuilderBox\Objects\Sitemap;
+use Ling\SitemapBuilderBox\Objects\SitemapIndex;
+use Ling\SitemapBuilderBox\Objects\Url;
+use Ling\SitemapBuilderBox\Tool\SitemapBuilderTool;
 
 class XmlSitemapBuilder implements SitemapBuilderInterface
 {
